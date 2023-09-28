@@ -4,10 +4,10 @@ const got = require('got');
   console.log("**Start Stream**\n")
   try {
     const stream = got.stream({
-      url: 'https://starfish-app-gl4tg.ondigitalocean.app/chat',
+      url: 'http://3.91.240.153:3000/chat',
       method: 'POST',
       json: {
-        "model": "gpt-3.5-turbo",
+        "model": "gpt-4-0613",
         "messages": [
           {
             "role": "system",
